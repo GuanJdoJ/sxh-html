@@ -1,0 +1,261 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #FFF;
+}
+* {
+  margin: 0;
+  outline: medium none;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PingFang SC", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+@font-face {
+  font-family: 'PingFang SC';
+  src: url('../fonts/PingFang.ttc');
+  font-weight: normal;
+  font-style: normal;
+}
+.container .page {
+  position: absolute;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1124px;
+  height: 100%;
+  border: none;
+}
+.container .page .page_box {
+  max-width: 100%;
+  width: auto;
+  overflow-x: hidden;
+  outline: none;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.container .page .page_box .page_item {
+  width: 1920px;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.img {
+  max-width: 100%;
+  width: auto;
+  display: block;
+}
+.flex {
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+}
+/*header样式 ---start*/
+.common_header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  min-width: 1190px;
+  height: 61.8px;
+  z-index: 9999;
+  background-color: #FFFFFF;
+}
+.common_header .header_content {
+  width: 780px;
+  margin: 0 auto;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.common_header .header_content .header_link {
+  font-size: 14px;
+  color: #000000;
+}
+.common_header .header_content .header_link > a {
+  margin-right: 24px;
+}
+.common_header .header_content .header_link .active {
+  color: #FF387B;
+}
+/*header样式 ---end*/
+/*footer 样式---start*/
+.footer_left {
+  position: absolute;
+  top: 18.3%;
+  left: 20%;
+}
+.footer_left .footer_details {
+  font-family: "PingFang SC", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 24px;
+}
+.footer_right {
+  position: absolute;
+  top: 22.3%;
+  right: 20%;
+}
+.footer_right .footer_code_wrap .footer_code_item {
+  width: 100px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer_right .footer_code_wrap .footer_code_item img {
+  width: 84px;
+  height: 84px;
+  display: block;
+  margin: 0 auto;
+}
+.footer_right .footer_code_wrap .footer_code_item .footer_name {
+  margin-top: 4px;
+  text-align: center;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+/*footer 样式---end*/
+/*表单样式---start*/
+.form_wrap {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(176deg, rgba(255, 228, 237, 0.51), rgba(255, 107, 157, 0.51));
+  box-shadow: 2px 9px 25px 2px rgba(193, 193, 193, 0.3);
+  border-radius: 8px 8px 8px 8px;
+  font-family: "PingFang SC", sans-serif;
+}
+.form_wrap .form_title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #2c2c2c;
+  text-align: center;
+  padding: 32px 0 20px;
+}
+.form_wrap .form_content {
+  padding: 0 40px;
+}
+.form_wrap .form_content .form_item {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2c2c2c;
+  line-height: 80px;
+}
+.form_wrap .form_content .form_item .form_label {
+  display: inline-block;
+  width: 100px;
+  height: 16px;
+  text-align: justify;
+  vertical-align: top;
+  margin-right: 42px;
+}
+.form_wrap .form_content .form_item .form_label::after {
+  display: inline-block;
+  width: 100%;
+  content: '';
+  height: 0;
+}
+.form_wrap .form_content .form_item .form_input {
+  width: 427px;
+  height: 27px;
+  background: #ffffff;
+  border: none;
+  border-radius: 2px 2px 2px 2px;
+  font-family: "PingFang SC", sans-serif;
+  font-size: 16px;
+  padding: 2px 5px;
+}
+.form_wrap .form_content .form_item .form_textarea {
+  width: 427px;
+  background: #ffffff;
+  border: none;
+  border-radius: 2px 2px 2px 2px;
+  font-family: "PingFang SC", sans-serif;
+  font-size: 16px;
+  padding: 2px 5px;
+}
+.form_wrap .form_content .form_item .form_checkbox input[type="checkbox"] {
+  width: 17.6px;
+  height: 17.6px;
+  background-color: #fff;
+  -webkit-appearance: none;
+  border: 1px solid #c9c9c9;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 18px;
+  margin-right: 10px;
+  position: relative;
+}
+.form_wrap .form_content .form_item .form_checkbox input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.form_wrap .form_content .form_item .form_checkbox input[type="checkbox"]:checked::before {
+  content: "\2713";
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #FF387B;
+  font-size: 20px;
+  font-weight: bold;
+}
+.form_wrap .form_content .form_button {
+  width: 223px;
+  height: 68px;
+  background: linear-gradient(176deg, rgba(255, 167, 219, 0.51), rgba(255, 56, 123, 0.51));
+  box-shadow: 1px 5px 9px 1px rgba(255, 56, 123, 0.3);
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto 0;
+  cursor: pointer;
+  font-size: 36px;
+  font-family: "PingFang SC", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 1px 3px 0 rgba(255, 56, 123, 0.51);
+}
+
+.tanchuang {
+  width: 278px;
+  height: 60px;
+  line-height: 60px;
+  background: rgba(0, 0, 0, 1);
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.13);
+  border-radius: 8px;
+  opacity: 0.62;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 5;
+  color: #fff;
+  display: none;
+}
+/*表单样式---end*/
