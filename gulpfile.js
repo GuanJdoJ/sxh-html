@@ -41,7 +41,7 @@ function less() {
 }
 
 function js() {
-	return src(app.srcPath + 'js/**/*.js')
+	return src(app.srcPath + 'js/**')
 		.pipe($.plumber())
 		.pipe(dest(app.devPath + 'js'))
 		.pipe($.uglify())
@@ -82,7 +82,7 @@ const serve = series(build, function (cb) {
 	watch(app.srcPath + 'css/**',
 		css
 	);
-	watch(app.srcPath + 'js/**/*.js',
+	watch(app.srcPath + 'js/**',
 		js
 	);
 	watch(app.srcPath + 'images/**',
